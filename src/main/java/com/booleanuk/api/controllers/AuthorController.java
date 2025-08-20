@@ -44,7 +44,6 @@ public class AuthorController {
         authorToUpdate.setLastName(author.getLastName());
         authorToUpdate.setEmail(author.getEmail());
         authorToUpdate.setAlive(author.isAlive());
-        authorToUpdate.setBooks(author.getBooks());
 
         return new ResponseEntity<>(this.authorRepsitory.save(authorToUpdate), HttpStatus.CREATED);
     }
